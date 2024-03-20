@@ -26,7 +26,7 @@ function App() {
 
       <div className="hero-section text-black p-10 mb-6 flex flex-col md:flex-row">
         <div className="w-full md:w-1/2">
-          <h1 className="text-4xl font-bold mt-4">Empowered</h1>
+          <h1 className="text-4xl font-bold mt-4">Masjid tarbiyah</h1>
           <p className="text-lg mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
