@@ -54,119 +54,153 @@ function App() {
           />
         </div>
       </div>
+<section className="flex justify-start bg-gray-100 p-16 pt-20 pb-20 mb-8">
+  <div className="w-1/2">
+    <div className="bg-white p-10 rounded-lg shadow-lg">
+      <h2 className="text-3xl font-bold mb-6">About Us</h2>
+      <p className="text-lg mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget felis id justo elementum feugiat.
+        Fusce porttitor vitae risus vel euismod. Nam ac arcu id ipsum scelerisque tristique a id nisl.
+        Nullam nec justo et urna laoreet semper in nec purus. Aenean pharetra tempor nibh eget rutrum.
+        In id sem vitae enim elementum consequat eget eu eros. Integer vitae pharetra lorem.
+      </p>
+      <p className="text-lg mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget felis id justo elementum feugiat.
+        Fusce porttitor vitae risus vel euismod. Nam ac arcu id ipsum scelerisque tristique a id nisl.
+        Nullam nec justo et urna laoreet semper in nec purus. Aenean pharetra tempor nibh eget rutrum.
+        In id sem vitae enim elementum consequat eget eu eros. Integer vitae pharetra lorem.
+      </p>
+    </div>
+     
+  </div>
+</section>
 
-      <section className="bg-gray-100 p-10 mb-6 text-center">
-        <h2 className="text-3xl font-bold">Our users</h2>
-        <p className="text-lg mt-4">
-          Get to follow campaigns by people you know.
-        </p>
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {/* box 1  */}
-          <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center">
-            {/* <GoSmiley className="text-2xl mb-2" /> */}
-            <span className="text-2xl">250+</span>
-            <p className="text-base">customers</p>
-          </div>
-          {/* box 2  */}
-          <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center">
-            {/* <GoSmiley className="text-2xl mb-2" /> */}
-            <span className="text-2xl">600+</span>
-            <p className="text-base">customers</p>
-          </div>
-          {/* box 3  */}
-          <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center">
-            {/* <GoSmiley className="text-2xl mb-2" /> */}
-            <span className="text-2xl">1.8k+</span>
-            <p className="text-base">customers</p>
-          </div>
-          {/* box 4  */}
-          <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center">
-            {/* <GoSmiley className="text-2xl mb-2" /> */}
-            <span className="text-2xl">250+</span>
-            <p className="text-base">customers</p>
-          </div>
-        </div>
-      </section>
+
+
+
 
       <section className="bg-blue-500 text-white p-10 mb-6">
-        <h2 className="text-3xl font-bold mb-6 text-center">How It Works</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center">Keep the masjid running</h2>
         <div className="flex flex-col-reverse md:flex-row items-center justify-center">
           <div className="w-full md:w-1/2 pr-6">
             <h3 className="text-2xl font-bold">Sign Up</h3>
             <p className="text-lg mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              quos amet exercitationem modi quod similique labore aliquam alias
-              facilis? Dicta voluptates cupiditate, ab nesciunt modi ullam ea
-              corrupti voluptatem. Maxime.
+       We encourage you all to donate; and for Allah ﷻ not only reward you, but to also put barakah in your wealth.
+
+Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the sake of Allah ﷻ, Allah ﷻ will build for him a house in Paradise! By donating, not only will you be providing a place of worship but laying foundations for your own spiritual rewards in this life and the next.
             </p>
           </div>
           <div className="w-full md:w-1/2">
-            <img src={signup} alt="Screenshot" className="max-w-full" />
+        
           </div>
         </div>
       </section>
 
-      <section className="p-10 mb-6 flex flex-col-reverse md:flex-row">
-        <div className="w-full md:w-1/2 p-4">
-          <img src={image2} alt="Image 1" className="max-w-full mb-4" />
-        </div>
-        <div className="w-full md:w-1/2 p-4">
-          <h2 className="text-3xl font-bold">Browse Campaigns</h2>
-          <p className="text-lg mt-4">
-            Description of how to browse campaigns.
-          </p>
-        </div>
-      </section>
+  
+    
+<section className="flex justify-center items-center h-auto py-10">
+  <div className="card w-96 glass text-center mx-4">
+    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
+    <div className="card-body">
+      <h2 className="card-title">Life hack</h2>
+      <p>How to park your car at your garage?</p>
+      <div className="card-actions justify-center">
+        <button className="btn btn-primary">Learn now!</button>
+      </div>
+    </div>
+  </div>
 
-      <section className="bg-blue-500 text-white p-16 mb-6">
-        <h2 className="text-3xl font-bold mb-6 text-center">Join Campaign</h2>
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center">
-          <div className="w-full md:w-1/2 p-4 flex items-center">
-            <div>
-              <h2 className="text-5xl font-bold mt-1 mb-4">Join Campaign</h2>
-              <p className="text-lg mt-2">
-                Description of how to join a campaign.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 p-4">
-            <img
-              src={image3}
-              alt="Join Campaign Image"
-              className="max-w-full rounded-lg"
-            />
-          </div>
-        </div>
-      </section>
+  <div className="card w-96 glass text-center mx-4">
+    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
+    <div className="card-body">
+      <h2 className="card-title">Life hack</h2>
+      <p>How to park your car at your garage?</p>
+      <div className="card-actions justify-center">
+        <button className="btn btn-primary">Learn now!</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <section className="flex justify-center items-center h-screen">
-        <div className="p-2 mt-2 mb-2 text-center">
-          <h2 className="text-3xl font-bold mt-2 mb-16">
-            Join the community and let's make a difference
-          </h2>
-          <p className="text-lg mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            mollitia omnis optio ratione officiis eveniet fugit aliquid ipsum
-            qui quibusdam dolorem, odio nesciunt suscipit debitis maxime fugiat
-            voluptates totam iusto.
-          </p>
+     <section className="bg-blue-500 text-white p-16 mb-6">
+  <h2 className="text-3xl font-bold mb-6 text-center">Join Campaign</h2>
+  <div className="flex flex-col-reverse md:flex-row items-center justify-center">
+    <div className="w-full md:w-1/2 p-4 flex items-center">
+      <div>
+        <h2 className="text-5xl font-bold mt-1 mb-4">Join Campaign</h2>
+        <p className="text-lg mt-2">
+          Description of how to join a campaign.
+        </p>
+      </div>
+    </div>
+    <div className="w-full md:w-1/2 p-4">
+      <img
+        src={image3}
+        alt="Join Campaign Image"
+        className="max-w-full rounded-lg"
+      />
+    </div>
+  </div>
+</section>
 
-          <div className="flex justify-center mt-2">
-            <button
-              onClick={() => console.log("Sign up button clicked")}
-              className="text-white bg-blue-500 px-8 py-3 rounded-lg hover-bg-blue-700 hover-text-white m-2 w-48"
-            >
-              Sign up
-            </button>
-            <button
-              onClick={() => console.log("Log in button clicked")}
-              className="text-blue-500 bg-white px-8 py-3 rounded-lg border border-blue-500 hover-bg-blue-500 hover-text-white m-2 w-48"
-            >
-              Log in
-            </button>
-          </div>
-        </div>
-      </section>
+<section className="flex justify-center items-center h-auto py-10">
+  <div className="p-2 mt-2 mb-2 text-center">
+    <h2 className="text-3xl font-bold mt-2 mb-16">
+      Prayer times
+    </h2>
+    <p className="text-lg mt-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+      mollitia omnis optio ratione officiis eveniet fugit aliquid ipsum
+      qui quibusdam dolorem, odio nesciunt suscipit debitis maxime fugiat
+      voluptates totam iusto.
+    </p>
+    <div className="flex justify-center mt-2">
+      <button
+        onClick={() => console.log("Sign up button clicked")}
+        className="text-white bg-blue-500 px-8 py-3 rounded-lg hover-bg-blue-700 hover-text-white m-2 w-48"
+      >
+        Sign up
+      </button>
+    </div>
+  </div>
+</section>
+
+<section className="flex justify-center items-center h-auto py-10">
+  <form className="w-full max-w-lg">
+    <div className="flex flex-wrap -mx-3 mb-6">
+      <div className="w-full px-3 mb-6 md:mb-0">
+        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+          Name
+        </label>
+        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" type="text" placeholder="Jane Doe"/>
+      </div>
+    </div>
+    <div className="flex flex-wrap -mx-3 mb-6">
+      <div className="w-full px-3">
+        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
+          Email
+        </label>
+        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="email@example.com"/>
+      </div>
+    </div>
+    <div className="flex flex-wrap -mx-3 mb-6">
+      <div className="w-full px-3">
+        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-message">
+          Message
+        </label>
+        <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-message" placeholder="Enter your message here"></textarea>
+      </div>
+    </div>
+    <div className="flex flex-wrap -mx-3 mb-2">
+      <div className="w-full px-3 text-center">
+        <button className="shadow bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+          Send
+        </button>
+      </div>
+    </div>
+  </form>
+</section>
+
 
       <footer className="footer footer-center p-10 bg-blue-500 text-white rounded">
         <h1 className="text-3xl">Logo</h1>
