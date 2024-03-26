@@ -163,6 +163,22 @@ Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the s
       </button>
     </div>
   </div>
+      </section>
+      
+      <section className="video-section py-10">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-6">Watch Our Video</h2>
+    <div className="video-container" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', marginBottom: '40px' }}>
+      <iframe
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
 </section>
 
 <section className="flex justify-center items-center h-auto py-10">
