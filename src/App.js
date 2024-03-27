@@ -2,8 +2,6 @@ import Navbar from "./components/Navbar";
 
 // import { GoSmiley } from "react-icons/go";
 import HeroSection from "./Hero-Section.png";
-import signup from "./signup.png";
-import Logo from "./Logo.jpg";
 import Salah from "./Salah.jpeg";
 import VideoPlayer from './components/VideoPlayer';
 
