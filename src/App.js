@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 
 // import { GoSmiley } from "react-icons/go";
 import HeroSection from "./Hero-Section.png";
+import SocialMedia from "./SocialMedia.jpg";
 import Salah from "./Salah.jpeg";
 import VideoPlayer from './components/VideoPlayer';
 
@@ -52,14 +53,17 @@ function App() {
       </button> */}
     </div>
   </div>
+<div className="w-full md:w-3/4 flex justify-end"> {/* Increase the width of the container */}
+  <img
+    src={SocialMedia}
+    alt="A beautiful view of nature"
+    className="md:max-w-full mt-4 md:mt-0 rounded-lg shadow-lg"
+    style={{ objectFit: 'cover', width: '400px' }} // Increase the size of the image
+  />
+</div>
 
-  <div className="w-full md:w-1/2">
-    <img
-      src={HeroSection}
-      alt="A beautiful view of nature"
-      className="max-w-full mt-4 md:mt-0"
-    />
-  </div>
+
+
 </section>
 
 <section className="flex justify-start bg-gray-100 p-16 pt-20 pb-20 mb-8">
