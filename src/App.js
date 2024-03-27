@@ -75,22 +75,23 @@ function App() {
   </div>
 </section>
 
-      <section className="bg-blue-500 text-white p-10 mb-6">
-        <h2 className="text-3xl font-bold mb-6 text-center">Keep the masjid running</h2>
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center">
-          <div className="w-full md:w-1/2 pr-6">
-            <h3 className="text-2xl font-bold">Sign Up</h3>
-            <p className="text-lg mt-4">
-       We encourage you all to donate; and for Allah ﷻ not only reward you, but to also put barakah in your wealth.
+     <section className="bg-blue-500 text-white p-10 mb-20">
+  <h2 className="text-3xl font-bold mb-6 text-center">Keep the masjid running</h2>
+  <div className="flex flex-col-reverse md:flex-row items-center justify-center">
+    <div className="w-full md:w-1/2 pr-6">
+      <h3 className="text-2xl font-bold">Sign Up</h3>
+      <p className="text-lg mt-4">
+        We encourage you all to donate; and for Allah ﷻ not only reward you, but to also put barakah in your wealth.
 
-Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the sake of Allah ﷻ, Allah ﷻ will build for him a house in Paradise! By donating, not only will you be providing a place of worship but laying foundations for your own spiritual rewards in this life and the next.
-            </p>
-          </div>
-         
-         <VideoPlayer />
-          
-        </div>
-      </section>
+        Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the sake of Allah ﷻ, Allah ﷻ will build for him a house in Paradise! By donating, not only will you be providing a place of worship but laying foundations for your own spiritual rewards in this life and the next.
+      </p>
+    </div>
+    <div className="w-full md:w-1/2">
+      <VideoPlayer />
+    </div>
+  </div>
+</section>
+
 
   
     
