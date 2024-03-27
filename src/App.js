@@ -87,7 +87,7 @@ function App() {
       </p>
     </div>
     <div className="w-full md:w-1/2">
-      <VideoPlayer />
+      {/* <VideoPlayer /> */}
     </div>
   </div>
 </section>
