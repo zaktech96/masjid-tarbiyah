@@ -3,7 +3,14 @@ import Navbar from "./components/Navbar";
 // import { GoSmiley } from "react-icons/go";
 import HeroSection from "./Hero-Section.png";
 import signup from "./signup.png";
-import image2 from "./image2.png";
+import Logo from "./Logo.jpg";
+import Salah from "./Salah.jpeg";
+import VideoPlayer from './components/VideoPlayer';
+
+
+
+
+
 import image3 from "./image3.png";
 
 function App() {
@@ -19,41 +26,44 @@ function App() {
 
   return (
     <div className="App">
+    
       <Navbar
         onSignUpClick={handleSignUpClick}
         onLogInClick={handleLogInClick}
       />
-
-      <div className="hero-section text-black p-10 mb-6 flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2">
-          <h1 className="text-4xl font-bold mt-4">Masjid tarbiyah</h1>
-          <p className="text-lg mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <div className="mt-6">
-            <button
-              onClick={() => console.log("Sign Up button clicked")}
-              className="text-white bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-700 hover-text-white m-2"
+        
+    <section className="hero-section text-black bg-gray-200 p-10 mb-6 flex flex-col md:flex-row">
+  <div className="w-full md:w-1/2 flex flex-col justify-center">
+    <h1 className="text-4xl font-bold mt-4 mb-4 md:mt-0">Masjid Tarbiyah</h1>
+    <p className="text-lg mb-4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <div>
+      {/* <button
+        onClick={() => console.log("Sign Up button clicked")}
+        className="btn-primary mr-2"
             >
-              Sign up
-            </button>
-            <button
-              onClick={() => console.log("Log In button clicked")}
-              className="text-blue-500 bg-white px-4 py-2 rounded-lg border border-blue-500 hover-bg-blue-500 hover-text-white m-2"
-            >
-              Log in
-            </button>
-          </div>
-        </div>
+              About Us
+       
+      </button>
+      <button
+        onClick={() => console.log("Log In button clicked")}
+        className="btn-secondary"
+      >
+      Prayer Time
+      </button> */}
+    </div>
+  </div>
 
-        <div className="w-full md:w-1/2">
-          <img
-            src={HeroSection}
-            alt="A beautiful view of nature"
-            className="max-w-full mt-4 md:mt-0"
-          />
-        </div>
-      </div>
+  <div className="w-full md:w-1/2">
+    <img
+      src={HeroSection}
+      alt="A beautiful view of nature"
+      className="max-w-full mt-4 md:mt-0"
+    />
+  </div>
+</section>
+
 <section className="flex justify-start bg-gray-100 p-16 pt-20 pb-20 mb-8">
   <div className="w-1/2">
     <div className="bg-white p-10 rounded-lg shadow-lg">
@@ -75,10 +85,6 @@ function App() {
   </div>
 </section>
 
-
-
-
-
       <section className="bg-blue-500 text-white p-10 mb-6">
         <h2 className="text-3xl font-bold mb-6 text-center">Keep the masjid running</h2>
         <div className="flex flex-col-reverse md:flex-row items-center justify-center">
@@ -91,14 +97,14 @@ Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the s
             </p>
           </div>
           <div className="w-full md:w-1/2">
-        
+         <VideoPlayer />
           </div>
         </div>
       </section>
 
   
     
-<section className="flex justify-center items-center h-auto py-10">
+{/* <section className="flex justify-center items-center h-auto py-10">
   <div className="card w-96 glass text-center mx-4">
     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
     <div className="card-body">
@@ -120,28 +126,32 @@ Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the s
       </div>
     </div>
   </div>
-</section>
-
-     <section className="bg-blue-500 text-white p-16 mb-6">
-  <h2 className="text-3xl font-bold mb-6 text-center">Join Campaign</h2>
-  <div className="flex flex-col-reverse md:flex-row items-center justify-center">
-    <div className="w-full md:w-1/2 p-4 flex items-center">
-      <div>
-        <h2 className="text-5xl font-bold mt-1 mb-4">Join Campaign</h2>
-        <p className="text-lg mt-2">
-          Description of how to join a campaign.
-        </p>
-      </div>
+</section> */}
+<section className="bg-gray-200 text-gray-800 p-8 md:p-16 mb-8 md:mb-16 rounded-lg shadow-lg">
+  <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center md:text-left">Join Our Campaign</h2>
+  <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
+    <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center items-center md:items-start">
+      <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-center md:text-left">Prayer Time</h3>
+      <p className="text-lg md:text-xl text-center md:text-left leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget tortor dignissim, vehicula magna at, sodales augue.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur tincidunt quam non diam dignissim, sed consequat lectus lacinia.
+      </p>
     </div>
-    <div className="w-full md:w-1/2 p-4">
+    <div className="w-full md:w-1/2 p-4 md:p-8 flex justify-center items-center">
       <img
-        src={image3}
+        src={Salah}
         alt="Join Campaign Image"
-        className="max-w-full rounded-lg"
+        className="max-w-sm md:max-w-md rounded-lg"
       />
     </div>
   </div>
 </section>
+
+
+
+
+
+
 
 <section className="flex justify-center items-center h-auto py-10">
   <div className="p-2 mt-2 mb-2 text-center">
@@ -164,22 +174,7 @@ Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the s
     </div>
   </div>
       </section>
-      
-      <section className="video-section py-10">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center mb-6">Watch Our Video</h2>
-    <div className="video-container" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', marginBottom: '40px' }}>
-      <iframe
-        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
-</section>
+
 
 <section className="flex justify-center items-center h-auto py-10">
   <form className="w-full max-w-lg">
