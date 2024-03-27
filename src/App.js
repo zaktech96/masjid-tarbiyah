@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 
-// import { GoSmiley } from "react-icons/go";
-import HeroSection from "./Hero-Section.png";
+
+
 import SocialMedia from "./SocialMedia.jpg";
 import Salah from "./Salah.jpeg";
 import VideoPlayer from './components/VideoPlayer';
@@ -38,19 +38,7 @@ function App() {
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
     <div>
-      {/* <button
-        onClick={() => console.log("Sign Up button clicked")}
-        className="btn-primary mr-2"
-            >
-              About Us
-       
-      </button>
-      <button
-        onClick={() => console.log("Log In button clicked")}
-        className="btn-secondary"
-      >
-      Prayer Time
-      </button> */}
+  
     </div>
   </div>
 <div className="w-full md:w-3/4 flex justify-end"> {/* Increase the width of the container */}
@@ -98,9 +86,9 @@ function App() {
 Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the sake of Allah ﷻ, Allah ﷻ will build for him a house in Paradise! By donating, not only will you be providing a place of worship but laying foundations for your own spiritual rewards in this life and the next.
             </p>
           </div>
-          <div className="w-full md:w-1/2">
+         
          <VideoPlayer />
-          </div>
+          
         </div>
       </section>
 
@@ -148,12 +136,6 @@ Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the s
     </div>
   </div>
 </section>
-
-
-
-
-
-
 
 <section className="flex justify-center items-center h-auto py-10">
   <div className="p-2 mt-2 mb-2 text-center">
