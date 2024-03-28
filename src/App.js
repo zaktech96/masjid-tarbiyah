@@ -167,7 +167,7 @@ function App() {
 
 
 <section className="flex justify-center items-center h-auto py-10">
-  <form className="w-full max-w-lg" action="mailto:zakariyesahid96@gmail.com" method="post" encType="text/plain">
+  <form className="w-full max-w-lg" action="mailto:" method="post" encType="text/plain">
     <div className="flex flex-wrap -mx-3 mb-6">
       <div className="w-full px-3 mb-6 md:mb-0">
         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
