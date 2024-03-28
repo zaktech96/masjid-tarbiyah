@@ -7,7 +7,7 @@ import Salah from "./Salah.jpeg";
 import VideoPlayer from './components/VideoPlayer';
 
 
-
+import ContactForm from "./components/ContactForm";
 
 
 import image3 from "./image3.png";
@@ -95,8 +95,8 @@ function App() {
 
   
     
-{/* <section className="flex justify-center items-center h-auto py-10">
-  <div className="card w-96 glass text-center mx-4">
+<section className="flex justify-center items-center h-auto py-10">
+  <div className="card w-80 glass text-center mx-16"> {/* Decreased card width, increased mx value */}
     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
     <div className="card-body">
       <h2 className="card-title">Life hack</h2>
@@ -107,7 +107,7 @@ function App() {
     </div>
   </div>
 
-  <div className="card w-96 glass text-center mx-4">
+  <div className="card w-80 glass text-center mx-16"> {/* Decreased card width, increased mx value */}
     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
     <div className="card-body">
       <h2 className="card-title">Life hack</h2>
@@ -117,7 +117,10 @@ function App() {
       </div>
     </div>
   </div>
-</section> */}
+</section>
+
+
+
 <section className="bg-gray-200 text-gray-800 p-8 md:p-16 mb-8 md:mb-16 rounded-lg shadow-lg">
   <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center md:text-left">Join Our Campaign</h2>
   <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
@@ -160,12 +163,14 @@ function App() {
   </div>
       </section>
 
+      <ContactForm />
+
 
 <section className="flex justify-center items-center h-auto py-10">
-  <form className="w-full max-w-lg">
+  <form className="w-full max-w-lg" action="mailto:zakariyesahid96@gmail.com" method="post" encType="text/plain">
     <div className="flex flex-wrap -mx-3 mb-6">
       <div className="w-full px-3 mb-6 md:mb-0">
-        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
           Name
         </label>
         <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" type="text" placeholder="Jane Doe"/>
@@ -173,7 +178,7 @@ function App() {
     </div>
     <div className="flex flex-wrap -mx-3 mb-6">
       <div className="w-full px-3">
-        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
+        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
           Email
         </label>
         <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="email@example.com"/>
@@ -181,7 +186,7 @@ function App() {
     </div>
     <div className="flex flex-wrap -mx-3 mb-6">
       <div className="w-full px-3">
-        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-message">
+        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-message">
           Message
         </label>
         <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-message" placeholder="Enter your message here"></textarea>
@@ -189,13 +194,15 @@ function App() {
     </div>
     <div className="flex flex-wrap -mx-3 mb-2">
       <div className="w-full px-3 text-center">
-        <button className="shadow bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        <button className="shadow bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
           Send
         </button>
       </div>
     </div>
   </form>
 </section>
+
+
 
 
       <footer className="footer footer-center p-10 bg-blue-500 text-white rounded">
@@ -252,3 +259,5 @@ function App() {
 }
 
 export default App;
+
+
