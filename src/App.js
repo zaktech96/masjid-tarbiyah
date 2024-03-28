@@ -74,23 +74,22 @@ function App() {
      
   </div>
 </section>
-
-     <section className="bg-blue-500 text-white p-10 mb-20">
-  <h2 className="text-3xl font-bold mb-6 text-center">Keep the masjid running</h2>
-  <div className="flex flex-col-reverse md:flex-row items-center justify-center">
-    <div className="w-full md:w-1/2 pr-6">
-      <h3 className="text-2xl font-bold">Sign Up</h3>
-      <p className="text-lg mt-4">
-        We encourage you all to donate; and for Allah ﷻ not only reward you, but to also put barakah in your wealth.
-
-        Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the sake of Allah ﷻ, Allah ﷻ will build for him a house in Paradise! By donating, not only will you be providing a place of worship but laying foundations for your own spiritual rewards in this life and the next.
-      </p>
-    </div>
-    <div className="w-full md:w-1/2">
-      {/* <VideoPlayer /> */}
-    </div>
-  </div>
-</section>
+<section className="bg-blue-500 text-white p-6 mb-20" style={{ height: '600px' }}>
+      <h2 className="text-3xl font-bold mb-6 text-center">Keep the masjid running</h2>
+      <div className="flex flex-col-reverse md:flex-row items-start justify-between">
+        <div className="w-full md:w-1/2 pr-6 mb-4 md:mb-0 flex-grow-1"> {/* Added flex-grow-1 */}
+          <h3 className="text-2xl font-bold">Sign Up</h3>
+          <p className="text-lg mt-4">
+            We encourage you all to donate; and for Allah ﷻ not only reward you, but to also put barakah in your wealth.
+            <br/><br/>
+            Various Hadith cite the Prophet ﷺ saying: “Whoever builds a Masjid for the sake of Allah ﷻ, Allah ﷻ will build for him a house in Paradise! By donating, not only will you be providing a place of worship but laying foundations for your own spiritual rewards in this life and the next.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2 flex justify-end"> {/* Adjusted flexbox properties */}
+            <VideoPlayer style={{ maxWidth: '100%', width: '80%', marginLeft: 'auto' }} />
+        </div>
+      </div>
+    </section>
 
 
   
@@ -144,63 +143,17 @@ function App() {
 <section className="flex justify-center items-center h-auto py-10">
   <div className="p-2 mt-2 mb-2 text-center">
     <h2 className="text-3xl font-bold mt-2 mb-16">
-      Prayer times
+      Get in touch with us
     </h2>
     <p className="text-lg mt-2">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-      mollitia omnis optio ratione officiis eveniet fugit aliquid ipsum
-      qui quibusdam dolorem, odio nesciunt suscipit debitis maxime fugiat
-      voluptates totam iusto.
+    Below is a form which you can get in touch with us and send us a message. We will get back to you as soon as possible.
     </p>
-    <div className="flex justify-center mt-2">
-      <button
-        onClick={() => console.log("Sign up button clicked")}
-        className="text-white bg-blue-500 px-8 py-3 rounded-lg hover-bg-blue-700 hover-text-white m-2 w-48"
-      >
-        Sign up
-      </button>
-    </div>
+   
   </div>
       </section>
 
       <ContactForm />
 
-
-<section className="flex justify-center items-center h-auto py-10">
-  <form className="w-full max-w-lg" action="mailto:" method="post" encType="text/plain">
-    <div className="flex flex-wrap -mx-3 mb-6">
-      <div className="w-full px-3 mb-6 md:mb-0">
-        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
-          Name
-        </label>
-        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" type="text" placeholder="Jane Doe"/>
-      </div>
-    </div>
-    <div className="flex flex-wrap -mx-3 mb-6">
-      <div className="w-full px-3">
-        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
-          Email
-        </label>
-        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="email@example.com"/>
-      </div>
-    </div>
-    <div className="flex flex-wrap -mx-3 mb-6">
-      <div className="w-full px-3">
-        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-message">
-          Message
-        </label>
-        <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-message" placeholder="Enter your message here"></textarea>
-      </div>
-    </div>
-    <div className="flex flex-wrap -mx-3 mb-2">
-      <div className="w-full px-3 text-center">
-        <button className="shadow bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
-          Send
-        </button>
-      </div>
-    </div>
-  </form>
-</section>
 
 
 

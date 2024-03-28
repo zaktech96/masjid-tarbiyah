@@ -2,20 +2,22 @@ import React from 'react';
 
 function VideoPlayer() {
   return (
-    <div className="video-container" style={{ maxWidth: '80%', margin: 'auto', marginBottom: '30px' }}>
+    <div className="video-container" style={{ maxWidth: '100%', margin: 'auto', marginBottom: '20px', width: '100%', height: '450px' }}>
       <iframe 
         width="100%" 
-        height="auto" 
+        height="100%" 
         src="https://www.youtube.com/embed/IexRjppgjdE?controls=1" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen
-        style={{ width: '100%', height: '100%' }}
+        allowFullScreen
+        style={{ width: '50%', height: '50%' }}
       ></iframe>
     </div>
   );
 }
 
 export default VideoPlayer;
+
+
 
