@@ -74,10 +74,10 @@ function App() {
      
   </div>
 </section>
-<section className="bg-blue-500 text-white p-6 mb-20" style={{ height: '600px' }}>
+<section className="bg-blue-500 text-white p-6 mb-20" style={{ height: '400px' }}> {/* Adjusted height */}
       <h2 className="text-3xl font-bold mb-6 text-center">Keep the masjid running</h2>
       <div className="flex flex-col-reverse md:flex-row items-start justify-between">
-        <div className="w-full md:w-1/2 pr-6 mb-4 md:mb-0 flex-grow-1"> {/* Added flex-grow-1 */}
+        <div className="w-full md:w-1/2 pr-6 mb-4 md:mb-0"> {/* Adjusted width */}
           <h3 className="text-2xl font-bold">Sign Up</h3>
           <p className="text-lg mt-4">
             We encourage you all to donate; and for Allah ﷻ not only reward you, but to also put barakah in your wealth.
@@ -86,7 +86,9 @@ function App() {
           </p>
         </div>
         <div className="w-full md:w-1/2 flex justify-end"> {/* Adjusted flexbox properties */}
-            <VideoPlayer style={{ maxWidth: '100%', width: '80%', marginLeft: 'auto' }} />
+          <div style={{ marginLeft: 'auto' }}> {/* Added a container with marginLeft: 'auto' */}
+            <VideoPlayer style={{ width: '100%', height: '100%' }} /> {/* Adjusted width and height */}
+          </div>
         </div>
       </div>
     </section>
